@@ -1,0 +1,40 @@
+body{
+    margin:0;
+}
+.container{
+    display: grid;
+    grid-template-areas:
+        "header"
+        "search-box"
+        "shortcuts";
+        min-height: 100vh;
+        justify-items: center;
+    background: #303134;
+    color: white;
+}
+.header{
+    grid-area: header;
+    font-size: 50px;
+}
+.search-box{
+    grid-area: search-box;
+    color: gray;
+    
+    width: min(90%, 850px);
+    height: 56px;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 0 24px;
+}
+.shortcuts{
+    display: grid;
+    grid-area: shortcuts;
+    grid-template-columns: repeat(8,100px);
+    width: 800px;
+    height: 50px;
+}
+.shortcut {
+  display: grid;
+  place-items: center;
+}
